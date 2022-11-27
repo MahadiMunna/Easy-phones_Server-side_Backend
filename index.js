@@ -18,6 +18,7 @@ async function run (){
     try{
         const categoryCollection = client.db('easyPhones').collection('phonesCategory');
         const phonesCollection = client.db('easyPhones').collection('phones')
+        const advertiseCollection = client.db('easyPhones').collection('advertisedItems')
 
         app.get('/categories',async(req,res)=>{
             const query = {};
@@ -30,7 +31,16 @@ async function run (){
             const category = await categoryCollection.findOne(query);
             res.send(category);
         })
-        
+        app.get('/phones',async(req,res)=>{
+            const query = {};
+            const phones = await phonesCollection.find(query).toArray();
+            res.send(phones);
+        })
+        app.get('/advertise',async(req,res)=>{
+            const query = {};
+            const categories = await advertiseCollection.find(query).toArray();
+            res.send(categories);
+        })
     }
     finally{
 
