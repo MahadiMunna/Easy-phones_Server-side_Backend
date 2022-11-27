@@ -1,0 +1,63 @@
+[
+    {
+        "brand": "Iphone",
+        "name": "Iphone 13 pro max",
+        "img":"https://i.ibb.co/2M3HQHL/Apple-i-Phone-13-Pro-Max-image.jpg",
+        "price":"BDT. 65,000",
+        "originalPrice":"BDT. 120,000",
+        "location":"Dhaka",
+        "used":"1",
+        "seller":"Mahadi Hasan Munna"
+    },
+    {
+        "brand": "Iphone",
+        "name": "Iphone XS",
+        "img":"https://i.ibb.co/Rp715Yn/Apple-i-Phone-Xs.jpg",
+        "price":"BDT. 50,000",
+        "originalPrice":"BDT. 90,000",
+        "location":"Dhaka",
+        "used":"0.5",
+        "seller":"Zahin Faisal"
+    },
+    {
+        "brand": "Nokia",
+        "name": "Nokia G21",
+        "img":"https://i.ibb.co/Wyp2D6Y/nokia-g21-azul.jpg",
+        "price":"BDT. 16,000",
+        "originalPrice":"BDT. 35,000",
+        "location":"Dhaka",
+        "used":"1",
+        "seller":"Mahadi Hasan Munna"
+    },
+    {
+        "brand": "Nokia",
+        "name": "Nokia G50 128GB",
+        "img":"https://i.ibb.co/PYPQfRH/Nokia-g50-128gb.jpg",
+        "price":"BDT. 25,000",
+        "originalPrice":"BDT. 55,000",
+        "location":"Dhaka",
+        "used":"1 year",
+        "seller":"Rifat"
+    },
+    {
+        "brand": "Samsung",
+        "name": "Samsung Galaxy A13",
+        "img":"https://i.ibb.co/Ycq30x6/Samsung-Galaxy-A13.jpg",
+        "price":"BDT. 15,000",
+        "originalPrice":"BDT. 32,000",
+        "location":"Dhaka",
+        "used":"1 year",
+        "seller":"Mahadi Hasan Munna"
+    },
+    {
+        "brand": "Iphone",
+        "name": "Samsung Galaxy S22 ultra",
+        "img":"https://i.ibb.co/dJ5bJCC/Samsung-Galaxy-S22-Ultra.jpg",
+        "price":"BDT. 90,000",
+        "originalPrice":"BDT. 180,000",
+        "location":"Dhaka",
+        "used":"1 year",
+        "seller":"Mahadi Hasan Munna"
+    }
+    
+]
