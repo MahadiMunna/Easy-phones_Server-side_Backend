@@ -93,6 +93,11 @@ async function run (){
             const result = phonesCollection.insertOne(phone);
             res.send(result);
         })
+        app.post('/advertise',async(req,res)=>{
+            const phone = req.body;
+            const result = advertiseCollection.insertOne(phone);
+            res.send(result);
+        })
         app.delete('/users/:id',async(req,res)=>{
             const id = req.params.id;
             const query = {_id:ObjectId(id)};
