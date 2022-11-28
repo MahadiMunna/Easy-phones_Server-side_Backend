@@ -19,6 +19,7 @@ async function run (){
         const categoryCollection = client.db('easyPhones').collection('phonesCategory');
         const phonesCollection = client.db('easyPhones').collection('phones')
         const advertiseCollection = client.db('easyPhones').collection('advertisedItems')
+        const userCollection = client.db('easyPhones').collection('users')
 
         app.get('/categories',async(req,res)=>{
             const query = {};
@@ -40,6 +41,11 @@ async function run (){
             const query = {};
             const categories = await advertiseCollection.find(query).toArray();
             res.send(categories);
+        })
+        app.post('/users',async(req,res)=>{
+            const user = req.body;
+            const result = userCollection.insertOne(user);
+            res.send(result);
         })
     }
     finally{
