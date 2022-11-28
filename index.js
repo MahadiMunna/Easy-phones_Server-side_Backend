@@ -70,6 +70,12 @@ async function run (){
             const result = userCollection.insertOne(user);
             res.send(result);
         })
+        app.delete('/users/:id',async(req,res)=>{
+            const id = req.params.id;
+            const query = {_id:ObjectId(id)};
+            const result = await userCollection.deleteOne(query);
+            res.send(result);
+        })
         app.put('/users/:id',async(req,res)=>{
             const id= req.params.id;
             const filter = { _id: ObjectId(id)};
