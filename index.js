@@ -47,6 +47,12 @@ async function run (){
             const users = await userCollection.find(query).toArray();
             res.send(users);
         })
+        app.get('/my-products/:email',async(req,res)=>{
+            const email = req.params.email;
+            const query = {email}
+            const result = await phonesCollection.find(query).toArray();
+            res.send(result);
+        })
         app.get('/users/:email',async(req,res)=>{
             const email = req.params.email;
             const query = {email}
