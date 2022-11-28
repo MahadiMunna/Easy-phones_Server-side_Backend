@@ -42,9 +42,25 @@ async function run (){
             const categories = await advertiseCollection.find(query).toArray();
             res.send(categories);
         })
+        app.get('/users',async(req,res)=>{
+            const query = {};
+            const users = await userCollection.find(query).toArray();
+            res.send(users);
+        })
         app.post('/users',async(req,res)=>{
             const user = req.body;
             const result = userCollection.insertOne(user);
+            res.send(result);
+        })
+        app.put('/users/:id',async(req,res)=>{
+            const id= req.params.id;
+            const filter = { _id: ObjectId(id)};
+            const updatedUserList = {
+                $set:{
+                    role:'admin'
+                }
+            }
+            const result = await userCollection.updateOne(filter,updatedUserList);
             res.send(result);
         })
     }
